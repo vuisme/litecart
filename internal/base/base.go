@@ -6,7 +6,7 @@ import (
 	"fmt"
 
 	"github.com/pressly/goose/v3"
-	"github.com/shurco/litecart/pkg/fsutil"
+	"github.com/vuisme/litecart/pkg/fsutil"
 )
 
 // New is ...
