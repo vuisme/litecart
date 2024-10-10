@@ -5,8 +5,8 @@ import (
 	"database/sql"
 	"fmt"
 
-	"github.com/shurco/litecart/internal/models"
-	"github.com/shurco/litecart/pkg/security"
+	"github.com/vuisme/litecart/internal/models"
+	"github.com/vuisme/litecart/pkg/security"
 )
 
 // InstallQueries is a struct that embeds a pointer to an sql.DB.
