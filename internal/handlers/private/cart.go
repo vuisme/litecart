@@ -2,10 +2,10 @@ package handlers
 
 import (
 	"github.com/gofiber/fiber/v2"
-	"github.com/shurco/litecart/internal/mailer"
-	"github.com/shurco/litecart/internal/queries"
-	"github.com/shurco/litecart/pkg/logging"
-	"github.com/shurco/litecart/pkg/webutil"
+	"github.com/vuisme/litecart/internal/mailer"
+	"github.com/vuisme/litecart/internal/queries"
+	"github.com/vuisme/litecart/pkg/logging"
+	"github.com/vuisme/litecart/pkg/webutil"
 )
 
 // Carts is ...
