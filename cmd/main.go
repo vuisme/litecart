@@ -6,8 +6,8 @@ import (
 
 	"github.com/spf13/cobra"
 
-	app "github.com/shurco/litecart/internal"
-	"github.com/shurco/litecart/pkg/update"
+	app "github.com/vuisme/litecart/internal"
+	"github.com/vuisme/litecart/pkg/update"
 )
 
 var (
