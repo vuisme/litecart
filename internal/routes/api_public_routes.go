@@ -3,7 +3,7 @@ package routes
 import (
 	"github.com/gofiber/fiber/v2"
 
-	handlers "github.com/shurco/litecart/internal/handlers/public"
+	handlers "github.com/vuisme/litecart/internal/handlers/public"
 )
 
 // ApiPublicRoutes is ...
