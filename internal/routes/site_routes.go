@@ -3,8 +3,8 @@ package routes
 import (
 	"github.com/gofiber/fiber/v2"
 
-	handlers "github.com/shurco/litecart/internal/handlers/public"
-	"github.com/shurco/litecart/internal/queries"
+	handlers "github.com/vuisme/litecart/internal/handlers/public"
+	"github.com/vuisme/litecart/internal/queries"
 )
 
 // SiteRoutes is ...
