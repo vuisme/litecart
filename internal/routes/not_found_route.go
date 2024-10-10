@@ -5,8 +5,8 @@ import (
 
 	"github.com/gofiber/fiber/v2"
 
-	"github.com/shurco/litecart/internal/queries"
-	"github.com/shurco/litecart/pkg/webutil"
+	"github.com/vuisme/litecart/internal/queries"
+	"github.com/vuisme/litecart/pkg/webutil"
 )
 
 // NotFoundRoute func for describe 404 Error route.
