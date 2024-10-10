@@ -1,4 +1,4 @@
-module github.com/shurco/litecart
+module github.com/vuisme/litecart
 
 go 1.22
 
