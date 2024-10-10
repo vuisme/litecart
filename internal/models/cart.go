@@ -1,6 +1,6 @@
 package models
 
-import "github.com/shurco/litecart/pkg/litepay"
+import "github.com/vuisme/litecart/pkg/litepay"
 
 // Cart is ...
 type Cart struct {
