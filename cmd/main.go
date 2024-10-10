@@ -104,7 +104,7 @@ func cmdUpdate() *cobra.Command {
 		Short: "Updating the application to the latest version",
 		Run: func(serveCmd *cobra.Command, args []string) {
 			cfg := &update.Config{
-				Owner:             "shurco",
+				Owner:             "vuisme",
 				Repo:              "litecart",
 				CurrentVersion:    version,
 				ArchiveExecutable: "litecart",
