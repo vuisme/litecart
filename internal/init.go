@@ -1,9 +1,9 @@
 package app
 
 import (
-	"github.com/shurco/litecart/internal/base"
-	"github.com/shurco/litecart/migrations"
-	"github.com/shurco/litecart/pkg/fsutil"
+	"github.com/vuisme/litecart/internal/base"
+	"github.com/vuisme/litecart/migrations"
+	"github.com/vuisme/litecart/pkg/fsutil"
 )
 
 // Init is ...
