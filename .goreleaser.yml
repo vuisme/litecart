@@ -42,15 +42,6 @@ checksum:
 snapshot:
   name_template: '{{ .Tag }}-next'
 
-brews:
-  - repository:
-      owner: shurco
-      name: homebrew-tap
-      token: '{{ .Env.TAP_GITHUB_TOKEN }}'
-    homepage: https://github.com/shurco/litecart
-    description: '🛒 litecart - shopping-cart in 1 file'
-    license: 'MIT'
-
 upx:
   - enabled: false
 
@@ -98,8 +89,8 @@ changelog:
 
 dockers:
   - image_templates:
-      - 'shurco/litecart:v{{ .Version }}-amd64'
-      - 'ghcr.io/shurco/litecart:v{{ .Version }}-amd64'
+      - 'cpanel10x/litecart:v{{ .Version }}-amd64'
+      - 'ghcr.io/vuisme/litecart:v{{ .Version }}-amd64'
     dockerfile: Dockerfile.goreleaser
     use: buildx
     build_flag_templates:
@@ -117,8 +108,8 @@ dockers:
     goarch: amd64
 
   - image_templates:
-      - 'shurco/litecart:v{{ .Version }}-arm64'
-      - 'ghcr.io/shurco/litecart:v{{ .Version }}-arm64'
+      - 'cpanel10x/litecart:v{{ .Version }}-arm64'
+      - 'ghcr.io/vuisme/litecart:v{{ .Version }}-arm64'
     dockerfile: Dockerfile.goreleaser
     use: buildx
     build_flag_templates:
@@ -136,22 +127,22 @@ dockers:
     goarch: arm64
 
 docker_manifests:
-  - name_template: 'shurco/litecart:v{{ .Version }}'
+  - name_template: 'cpanel10x/litecart:v{{ .Version }}'
     image_templates:
-      - 'shurco/litecart:v{{ .Version }}-amd64'
-      - 'shurco/litecart:v{{ .Version }}-arm64'
-  - name_template: 'ghcr.io/shurco/litecart:v{{ .Version }}'
+      - 'cpanel10x/litecart:v{{ .Version }}-amd64'
+      - 'cpanel10x/litecart:v{{ .Version }}-arm64'
+  - name_template: 'ghcr.io/vuisme/litecart:v{{ .Version }}'
     image_templates:
-      - 'ghcr.io/shurco/litecart:v{{ .Version }}-amd64'
-      - 'ghcr.io/shurco/litecart:v{{ .Version }}-arm64'
-  - name_template: 'shurco/litecart:latest'
+      - 'ghcr.io/vuisme/litecart:v{{ .Version }}-amd64'
+      - 'ghcr.io/vuisme/litecart:v{{ .Version }}-arm64'
+  - name_template: 'cpanel10x/litecart:latest'
     image_templates:
-      - 'shurco/litecart:v{{ .Version }}-amd64'
-      - 'shurco/litecart:v{{ .Version }}-arm64'
-  - name_template: 'ghcr.io/shurco/litecart:latest'
+      - 'cpanel10x/litecart:v{{ .Version }}-amd64'
+      - 'cpanel10x/litecart:v{{ .Version }}-arm64'
+  - name_template: 'ghcr.io/vuisme/litecart:latest'
     image_templates:
-      - 'ghcr.io/shurco/litecart:v{{ .Version }}-amd64'
-      - 'ghcr.io/shurco/litecart:v{{ .Version }}-arm64'
+      - 'ghcr.io/vuisme/litecart:v{{ .Version }}-amd64'
+      - 'ghcr.io/vuisme/litecart:v{{ .Version }}-arm64'
 
 release:
   name_template: "v{{ .Version }}"
@@ -159,13 +150,7 @@ release:
     > *To update the prebuilt executable you can run `./litecart update`*
 
   footer: |
-    **Full Changelog**: https://github.com/shurco/litecart/compare/{{ .PreviousTag }}...{{ .Tag }}
+    **Full Changelog**: https://github.com/vuisme/litecart/compare/{{ .PreviousTag }}...{{ .Tag }}
     
     > [!WARNING]
     > If you are updating, it is essential to do the following - back up the **./site** folder if you have made changes to it (you can rename it). A new folder with updated files will be created.
-
-announce:
-  mastodon:
-    enabled: true
-    message_template: "#litecart {{ .Tag }} is out! Check it out: https://github.com/shurco/litecart/releases/tag/{{ .Tag }}"
-    server: https://mastodon.social
