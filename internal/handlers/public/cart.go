@@ -10,10 +10,10 @@ import (
 	"github.com/vuisme/litecart/internal/models"
 	"github.com/vuisme/litecart/internal/queries"
 	"github.com/vuisme/litecart/internal/webhook"
-	"github.com/vuisme/litecart/pkg/litepay"
-	"github.com/vuisme/litecart/pkg/logging"
-	"github.com/vuisme/litecart/pkg/security"
-	"github.com/vuisme/litecart/pkg/webutil"
+	"github.com/shurco/litecart/pkg/litepay"
+	"github.com/shurco/litecart/pkg/logging"
+	"github.com/shurco/litecart/pkg/security"
+	"github.com/shurco/litecart/pkg/webutil"
 )
 
 // Payment is ...
