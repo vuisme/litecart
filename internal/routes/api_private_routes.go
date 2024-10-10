@@ -4,7 +4,7 @@ import (
 	"github.com/gofiber/fiber/v2"
 
 	handlers "github.com/shurco/litecart/internal/handlers/private"
-	"github.com/shurco/litecart/internal/middleware"
+	"github.com/vuisme/litecart/internal/middleware"
 )
 
 // ApiPrivateRoutes is ...
