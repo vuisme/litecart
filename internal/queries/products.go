@@ -8,9 +8,9 @@ import (
 	"os"
 	"strings"
 
-	"github.com/shurco/litecart/internal/models"
-	"github.com/shurco/litecart/pkg/errors"
-	"github.com/shurco/litecart/pkg/security"
+	"github.com/vuisme/litecart/internal/models"
+	"github.com/vuisme/litecart/pkg/errors"
+	"github.com/vuisme/litecart/pkg/security"
 )
 
 // ProductQueries is a struct that embeds a pointer to an sql.DB.
