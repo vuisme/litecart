@@ -7,12 +7,12 @@ import (
 	"github.com/gofiber/fiber/v2"
 	"github.com/google/uuid"
 
-	"github.com/shurco/litecart/internal/models"
-	"github.com/shurco/litecart/internal/queries"
-	"github.com/shurco/litecart/pkg/errors"
-	"github.com/shurco/litecart/pkg/fsutil"
-	"github.com/shurco/litecart/pkg/logging"
-	"github.com/shurco/litecart/pkg/webutil"
+	"github.com/vuisme/litecart/internal/models"
+	"github.com/vuisme/litecart/internal/queries"
+	"github.com/vuisme/litecart/pkg/errors"
+	"github.com/vuisme/litecart/pkg/fsutil"
+	"github.com/vuisme/litecart/pkg/logging"
+	"github.com/vuisme/litecart/pkg/webutil"
 )
 
 // Products is ...
