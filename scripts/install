@@ -29,11 +29,11 @@ install() {
   echo "Fetching the latest version..."
   local _ver
   if [ "$_cmd" = curl ]; then
-    _ver=$(curl --silent "https://api.github.com/repos/shurco/litecart/releases/latest" | grep '"tag_name":' | sed -E 's/.*"v([^"]+)".*/\1/') || {
+    _ver=$(curl --silent "https://api.github.com/repos/vuisme/litecart/releases/latest" | grep '"tag_name":' | sed -E 's/.*"v([^"]+)".*/\1/') || {
       err "Error: could not fetch the latest litecart version number"
     }
   elif [ "$_cmd" = wget ]; then
-    _ver=$(wget -qO- "https://api.github.com/repos/shurco/litecart/releases/latest" | grep '"tag_name":' | sed -E 's/.*"v([^"]+)".*/\1/') || {
+    _ver=$(wget -qO- "https://api.github.com/repos/vuisme/litecart/releases/latest" | grep '"tag_name":' | sed -E 's/.*"v([^"]+)".*/\1/') || {
       err "Error: could not fetch the latest litecart version number"
     }
   fi
@@ -67,7 +67,7 @@ install() {
   esac
 
   local _url
-  _url="https://github.com/shurco/litecart/releases/download/v${_ver}/litecart_${_ver}_${_arc}.${_ext}"
+  _url="https://github.com/vuisme/litecart/releases/download/v${_ver}/litecart_${_ver}_${_arc}.${_ext}"
 
   echo "Installing litecart_${_ver} for ${_arc}..."
   if [ "$_cmd" = curl ]; then
