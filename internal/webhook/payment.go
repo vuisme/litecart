@@ -6,9 +6,9 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/shurco/litecart/internal/models"
-	"github.com/shurco/litecart/internal/queries"
-	"github.com/shurco/litecart/pkg/litepay"
+	"github.com/vuisme/litecart/internal/models"
+	"github.com/vuisme/litecart/internal/queries"
+	"github.com/vuisme/litecart/pkg/litepay"
 )
 
 type Event string
