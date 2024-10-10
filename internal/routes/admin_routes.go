@@ -6,7 +6,7 @@ import (
 
 	"github.com/gofiber/fiber/v2"
 	"github.com/gofiber/fiber/v2/middleware/filesystem"
-	"github.com/shurco/litecart/web"
+	"github.com/vuisme/litecart/web"
 )
 
 // AdminRoutes is ...
