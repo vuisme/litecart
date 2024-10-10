@@ -16,14 +16,14 @@ import (
 	"github.com/gofiber/fiber/v2"
 	"github.com/gofiber/template/html/v2"
 
-	"github.com/shurco/litecart/internal/middleware"
-	"github.com/shurco/litecart/internal/queries"
-	"github.com/shurco/litecart/internal/routes"
-	"github.com/shurco/litecart/migrations"
-	"github.com/shurco/litecart/pkg/fsutil"
-	"github.com/shurco/litecart/pkg/logging"
-	"github.com/shurco/litecart/pkg/webutil"
-	"github.com/shurco/litecart/web"
+	"github.com/vuisme/litecart/internal/middleware"
+	"github.com/vuisme/litecart/internal/queries"
+	"github.com/vuisme/litecart/internal/routes"
+	"github.com/vuisme/litecart/migrations"
+	"github.com/vuisme/litecart/pkg/fsutil"
+	"github.com/vuisme/litecart/pkg/logging"
+	"github.com/vuisme/litecart/pkg/webutil"
+	"github.com/vuisme/litecart/web"
 )
 
 var (
