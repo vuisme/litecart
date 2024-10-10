@@ -14,7 +14,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/shurco/litecart/pkg/archive"
+	"github.com/vuisme/litecart/pkg/archive"
 )
 
 // Config is ...
