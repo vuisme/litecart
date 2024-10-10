@@ -7,10 +7,10 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/shurco/litecart/internal/models"
-	"github.com/shurco/litecart/pkg/errors"
-	"github.com/shurco/litecart/pkg/security"
-	"github.com/shurco/litecart/pkg/strutil"
+	"github.com/vuisme/litecart/internal/models"
+	"github.com/vuisme/litecart/pkg/errors"
+	"github.com/vuisme/litecart/pkg/security"
+	"github.com/vuisme/litecart/pkg/strutil"
 )
 
 // SettingQueries wraps a sql.DB connection allowing for easy querying and interaction
